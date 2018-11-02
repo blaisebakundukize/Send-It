@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login &#38; Register </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container-login">
+    <div class="row">
+      <div class="col-1-of-2">
+        <h3 class="logo">SENDiT</h3>
+        <p>
+          Fast &#38; Reliable delivery
+        </p>
+        <div class="imgparcel">
+          <img src="../img/parcel.jpg" alt="parcel" class="img-parcel">
+        </div>
+        <p class="text-help">Create an account for delivering parcels anywhere</p>
+      </div>
+      <div class="col-1-of-2">
+        <div class="tab">
+          <button id="login" class="tab__btn">Sign In</button>
+          <button id="register" class="tab__btn">Sign Up</button>
+        </div>
+        <div class="tab__content">
+          <div id="sign-in" class="display-none">
+            <form action="#" class="form-control">
+              <p class="form__title">
+                ---- Sign In ----
+              </p>
+              <input type="text" class="form-group" placeholder="Email" name="email" required>
+              <input type="text" class="form-group" placeholder="Password" name="password" required>
+              <input type="checkbox" id="checkbox-admin"><span>Admin</span>
+              <button type="button" id="btn-login" class=" btn__green">Sign In</button>
+            </form>
+          </div>
+          <div id="sign-up" class="display-none">
+            <form action="#" class="form-control">
+              <p class="form__title">
+                ---- Sign Up ----
+              </p>
+              <input type="text" class="form-group" placeholder="Full name" name="name" required>
+              <input type="tel" class="form-group" placeholder="Phone number" name="tel" required>
+              <input type="email" class="form-group" placeholder="Email" name="email" required>
+              <input type="password" class="form-group" placeholder="Password" name="password" required>
+              <input type="password" class="form-group" placeholder="Confirm password" name="password2" required>
+              <button type="button" id="btn-register" class="btn__green">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Delivered and in transit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <h1>SENDiT</h1>
+      </div>
+      <div class="user-details">
+        <h4>Blaise Bakundukize</h4>
+        <a href="../index.html">logout</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="quote.html">Get Quote</a></li>
+          <li><a href="bookings.html">Bookings &#38; actions</a></li>
+          <li class="current"><a href="delivered.html">Delivery orders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="show-actions">
+      <div class="container">
+        <div class="boxes">
+          <div class="box">
+            <h3>Parcel delivered</h3>
+            <p id="number-parcel-delivered"></p>
+          </div>
+          <div class="box">
+            <h3>Parcel in transit</h3>
+            <p id="number-parcel-in-transit"></p>
+          </div>
+        </div>
+        <h2>Parcel delivery orders</h2>
+        <div class="parcel-list-container">
+          <table id="table-delivery-orders">
+            <tr>
+              <th>No</th>
+              <th>Order number</th>
+              <th>date created</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Delivery Status</th>
+            </tr>
+          </table>
+        </div>
+    </section>
+  </main>
+  <script src="../js/delivery_orders.js"></script>
+</body>
+<footer>
+  <p><span>SENDiT</span> parcel delivery, copyright &copy; 2018</p>
+</footer>
+
+</html>
