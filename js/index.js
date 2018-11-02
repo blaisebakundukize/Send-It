@@ -6,12 +6,12 @@ var UIController = (function () {
     tabContentLogin: "#sign-in",
     tabContentRegister: "#sign-up",
     btnSubmitLogin: "#btn-login",
-    btnSubmitRegister: "#btn-register"
+    btnSubmitRegister: "#btn-register",
+    checkboxAdmin: "#checkbox-admin"
   };
 
   return {
     getDOMString: function () {
-      console.log('get dom')
       return DOMStrings;
     }
   }
@@ -28,6 +28,7 @@ var Controller = (function (UICrtl) {
     var tabContentLogin = document.querySelector(DOMs.tabContentLogin);
     var tabContentRegister = document.querySelector(DOMs.tabContentRegister);
 
+    var checkboxAdmin = document.querySelector(DOMs.checkboxAdmin);
     loginTabBtn.addEventListener("click", function () {
       displayBlock(tabContentRegister, registerTabBtn, tabContentLogin, loginTabBtn);
     });
@@ -43,7 +44,13 @@ var Controller = (function (UICrtl) {
 
     document.querySelector(DOMs.btnSubmitLogin).addEventListener("click", () => {
       // After verify user input values, redirect to the next page
-      window.location.href = "../ui/quote.html"
+      if (checkboxAdmin.checked) {
+        checkboxAdmin.checked = false;
+        window.location.href = "../ui/admin.html"
+      } else {
+        window.location.href = "../ui/quote.html"
+      }
+
     });
   };
 
