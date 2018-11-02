@@ -1,0 +1,86 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Create parcel delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <h1>SENDiT</h1>
+      </div>
+      <div class="user-details">
+        <h4>Blaise Bakundukize</h4>
+        <a href="../index.html">logout</a>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="quote.html">Get Quote</a></li>
+          <li><a href="bookings.html">Bookings &#38; actions</a></li>
+          <li><a href="delivered.html">Delivery orders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="show-actions">
+      <div class="container">
+        <h2>Get Quote</h2>
+        <div class="locations">
+          <div class="location-from">
+            <span>From: </span>
+            <select name="country" id="country-from">
+              <option value="kenya">Kenya</option>
+              <option value="rwanda">Rwanda</option>
+              <option value="uganda">Uganda</option>
+              <option value="usa">USA</option>
+              <option value="nigeria">Nigeria</option>
+            </select>
+            <input type="text" id="input-postcode-1" placeholder="Postcode" name="postcode1">
+          </div>
+          <div class="location-to">
+            <span>To: </span>
+            <select name="country" id="country-to">
+              <option value="kenya">Kenya</option>
+              <option value="rwanda">Rwanda</option>
+              <option value="uganda">Uganda</option>
+              <option value="usa">USA</option>
+              <option value="nigeria">Nigeria</option>
+            </select>
+            <input type="text" id="input-postcode-2" placeholder="Postcode" name="postcode2">
+          </div>
+        </div>
+        <div class="parcel-details-container">
+          <div class="parcel-details-item">
+            <label for="quantity">Qty: </label>
+            <input type="number" value="1" name="quantity" require>
+            <label for="weight">Weight<span>kg</span>: </label>
+            <input type="number" name="weight" require>
+            <label for="length">Length<span>cm</span>: </label>
+            <input type="number" name="length" require>
+            <label for="width">Width<span>cm</span>: </label>
+            <input type="number" name="weight" require>
+            <label for="height">Height<span>cm</span>: </label>
+            <input type="number" name="height" require>
+            <button class="btn-add">+</button> <button class="btn-remove">x</button>
+            <hr>
+          </div>
+          <button class="btn-quote btn-add">Quote me now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><span>SENDiT</span> parcel delivery, copyright &copy; 2018</p>
+  </footer>
+</body>
+
+</html>
