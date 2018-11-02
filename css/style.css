@@ -131,6 +131,15 @@ button {
   display: none;
 }
 
+#sign-in span {
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+#sign-in input[type=checkbox] {
+  margin-top: 10px;
+}
+
 .logo {
   font-size: 35px;
   font-weight: 700;
