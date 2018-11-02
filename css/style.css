@@ -30,7 +30,8 @@ body {
   /* border: 1px solid gold; */
 }
 
-.row:after {
+.row::after,
+form.form-search::after {
   content: "";
   display: table;
   clear: both;
@@ -51,6 +52,8 @@ body {
 
 button {
   outline: none;
+  cursor: pointer;
+  text-align: center;
 }
 
 .tab__btn {
@@ -61,7 +64,6 @@ button {
   border: none;
   display: inline-block;
   background: none;
-  cursor: pointer;
 }
 
 .active,
@@ -98,7 +100,8 @@ button {
   width: 100%;
 }
 
-.form-group:focus {
+.form-group:focus,
+.search-parcel:focus {
   outline: none;
   border: 1px solid #4caf50;
 }
@@ -164,7 +167,7 @@ header {
   border-bottom: #cccccc 3px solid;
 }
 
-header a {
+header nav a {
   color: #555;
   text-decoration: none;
   font-size: 16px;
@@ -187,6 +190,7 @@ header .branding h1 {
 header .user-details {
   float: right;
   margin: 0;
+  text-align: center;
 }
 
 header nav {
@@ -197,6 +201,10 @@ header nav {
 header a:hover,
 header .current a {
   color: #4caf50;
+}
+
+header h2 {
+  text-align: center;
 }
 
 /* Section 'show-actions' */
@@ -216,6 +224,7 @@ header .current a {
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .show-actions .boxes {
@@ -274,6 +283,208 @@ header .current a {
   padding-bottom: 12px;
   background-color: #4caf50;
   color: #fff;
+}
+
+.parcel-list-container .table-bookings {
+  margin-top: 20px;
+}
+
+.table-bookings button {
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  border: none;
+  color: #fff;
+}
+
+.table-bookings button:hover,
+.table-bookings button:focus {
+  opacity: 0.8;
+  color: #1a0000;
+}
+
+.btn-cancel {
+  background-color: #e60000;
+}
+
+.btn-edit {
+  background-color: #4caf50;
+}
+
+.btn-details {
+  background-color: #669900;
+}
+
+.search-parcel-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form.form-search input[type=search]:focus {
+  border: 2px solid #4caf50;
+}
+
+form.form-search input[type=search] {
+  width: 80%;
+  float: left;
+  border: 2px solid #e7e7e7;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 7px 0 0 7px;
+  transition: border 0.3s;
+  margin-top: 15px;
+}
+
+form.form-search button {
+  width: 20%;
+  float: left;
+  padding: 15px 20px;
+  border-radius: 0 7px 7px 0;
+  margin-top: 15px;
+  border: 2px solid #e7e7e7;
+  border-left: none;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.search-result ul {
+  text-align: center;
+}
+
+.search-result ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.search-result-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-result-actions button {
+  padding: 12px 15px;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-result-actions button:active,
+.parcel-details-item button:active,
+.btn-quote:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.search-result li span {
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.container .locations {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.locations {
+  background-color: #4caf50;
+  margin: auto;
+  text-align: center;
+  content: "";
+  clear: both;
+  display: table;
+  padding: 20px;
+}
+
+.location-from {
+  float: left;
+  display: block;
+  margin-right: 30px;
+}
+
+.location-to {
+  float: right;
+  display: block;
+}
+
+.locations span {
+  margin-right: 3px;
+}
+
+.locations input[type=text],
+.locations select {
+  width: 40%;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  padding: 15px 15px;
+  border-radius: 2px;
+  transition: border 0.3s;
+}
+
+.parcel-details-container {
+  width: 80%;
+  margin: auto;
+  /* background-color: #4caf50; */
+  text-align: center;
+}
+
+.parcel-details-container input {
+  border: 1px solid #4caf50;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.parcel-details-container span {
+  padding: 3px;
+  color: #669900;
+  font-weight: 700;
+}
+
+.parcel-details-item hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #4caf50;
+}
+
+.parcel-details-item button {
+  padding: 2px 5px;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.parcel-details-item input[type=number] {
+  width: 50px;
+}
+
+.btn-add {
+  background-color: #4caf50;
+}
+
+.btn-remove {
+  background-color: #e60000;
+}
+
+.btn-quote {
+  border: none;
+  padding: 12px 15px;
+  font-size: 18px;
+  border-radius: 2px;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+.parcel-details-item input[type=number]::-webkit-inner-spin-button,
+.parcel-details-item input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 footer {
