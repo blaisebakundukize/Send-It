@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <h1>SENDiT</h1>
+      </div>
+      <div class="user-details">
+        <h4>Blaise Bakundukize</h4>
+        <a href="../index.html">logout</a>
+      </div>
+      <h2>Admin Panel</h2>
+    </div>
+  </header>
+  <main>
+    <section class="show-actions">
+      <div class="container">
+        <h2>Search parcel delivery order</h2>
+        <div class="search-parcel-container">
+          <form class="form-search">
+            <input type="search" class="search-parcel" placeholder="Seach Parcel ..." name="search"> <button type="submit"
+              class="btn-search">Search</button>
+          </form>
+        </div>
+        <div class="search-result">
+          <ul>
+            <li>Parcel ID:<span>12345</span></li>
+            <li>Customer:<span>Andela Kigali</span></li>
+            <li>From:<span>Rwanda</span> </li>
+            <li>To:<span>USA</span></li>
+          </ul>
+          <div class="search-result-actions"><button class="btn-edit">Update location &#38; status</button></div>
+        </div>
+    </section>
+  </main>
+  <!-- <script src="../js/admin.js"></script> -->
+</body>
+<footer>
+  <p><span>SENDiT</span> parcel delivery, copyright &copy; 2018</p>
+</footer>
+
+</html>
