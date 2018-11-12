@@ -39,7 +39,7 @@ var Controller = (function (UICrtl) {
 
     document.querySelector(DOMs.btnSubmitRegister).addEventListener("click", () => {
       // After verify user input values, redirect to the next page
-      window.location.href = "../ui/quote.html"
+      window.location.href = "./ui/quote.html"
     });
 
     document.querySelector(DOMs.btnSubmitLogin).addEventListener("click", () => {
