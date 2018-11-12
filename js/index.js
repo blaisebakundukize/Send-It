@@ -46,9 +46,9 @@ var Controller = (function (UICrtl) {
       // After verify user input values, redirect to the next page
       if (checkboxAdmin.checked) {
         checkboxAdmin.checked = false;
-        window.location.href = "../ui/admin.html"
+        window.location.href = "./ui/admin.html"
       } else {
-        window.location.href = "../ui/quote.html"
+        window.location.href = "./ui/quote.html"
       }
 
     });
